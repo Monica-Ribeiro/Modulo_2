@@ -13,13 +13,8 @@ var idade4 = 37
 var nome5 = "Marcia "
 var idade5 = 71
 
-console.log("Nome:", nome1)
-console.log("Idade:", idade1, "anos")
-console.log("Nome:",nome2)
-console.log("Idade:", idade2, "anos")
-console.log("Nome:", nome3)
-console.log("Idade:", idade3, "anos")
-console.log("Nome:", nome4)
-console.log("Idade:", idade4, "anos")
-console.log("Nome:", nome5)
-console.log("Idade:", idade5, "anos")
+console.log(nome1, "-", idade1, "anos")
+console.log(nome2, "-", idade2, "anos")
+console.log(nome3, "-", idade3, "anos")
+console.log(nome4, "-", idade4, "anos")
+console.log(nome5,"-", idade5, "anos")
