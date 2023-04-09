@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var nomeEmpresa = prompt("Digite o nome da empresa: ")
+    var tipoEmpresa = prompt("Digite o tipo da empresa: ")
+    var cnpjEmpresa = prompt("Digite o CNPJ da empresa: ")
+
+    var lista = []
+
+    var empresa = {
+        nome: nomeEmpresa,
+        tipo: tipoEmpresa,
+        cnpj: cnpjEmpresa
+    }
+
+lista.push(empresa)
+
+
+document.writeln("Nome da empresa: ", lista[0].nome)
+document.writeln("Tipo da empresa: ", lista[0].tipo)
+document.writeln("CNPJ: ", lista[0].cnpj)
+</script>
+</html>
