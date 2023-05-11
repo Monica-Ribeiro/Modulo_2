@@ -1,0 +1,49 @@
+let express = require('express')
+let app = express()
+let port = 8000
+
+let produtos = [
+    {
+        nomeProduto: "Tênis AllStar",
+        descricao: "Tênis AllStar diversas cores e tamanhos, muito conforto e estilo nos seus pés!",
+        valor: 170,
+        criadoEm: "23/04/2023",
+        emEstoque: true,
+    },
+    {
+        nomeProduto: "Jaqueta de couro",
+        descricao: "Uma jaqueta de couro",
+        valor: 170,
+        criadoEm: "01/02/2023",
+        emEstoque: true,
+    },
+    {
+        nomeProduto: "Luinária para estudos",
+        descricao: "Para iluminar suas idéias",
+        valor: 170,
+        criadoEm: "27/03/2023",
+        emEstoque: false,
+    },
+    {
+        nomeProduto: "Kit panelas",
+        descricao: "Kit panelas reforçadas",
+        valor: 170,
+        criadoEm: "20/04/2022",
+        emEstoque: false,
+    },
+    {
+        nomeProduto: "Sofá 3 lugares",
+        descricao: "Sojá grande e espaçoso, diversas cores.",
+        valor: 170,
+        criadoEm: "15/08/2022",
+        emEstoque: true,
+    }
+]
+
+app.get("/produtos", function(req, res){
+    return res.send(produtos)
+})
+
+app.listen(port, function(){
+    console.log(`´Servidor rodando http://localhost:${port}`)
+})
